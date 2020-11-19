@@ -139,7 +139,7 @@ MonoBehaviour:
   DoorPrefabPriority: 0
   DoorPrefabs: []
   BlockerPrefabs:
-  - {fileID: 176122, guid: 230ec277257f5374f878f2e5a50d413d, type: 3}
+  - {fileID: 8254883459897348056, guid: 230ec277257f5374f878f2e5a50d413d, type: 3}
   AvoidRotatingDoorPrefab: 0
   AvoidRotatingBlockerPrefab: 0
   AddWhenInUse: []
@@ -184,6 +184,32 @@ Transform:
   m_Father: {fileID: 4835698039185473594}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4835698038709913036
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4835698037430760075}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1647456, y: 0.468608, z: 0.8101477}
+  m_Center: {x: -0.00000029802334, y: 0.234304, z: -0.0000004768374}
+--- !u!65 &4835698037709342825
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4835698037430922263}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1233014, y: 0.308385, z: 0.832036}
+  m_Center: {x: 0.0000006443924, y: 0.10873851, z: 0.37777394}
 --- !u!1 &4835698037690940642
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,19 +244,6 @@ Transform:
   m_Father: {fileID: 4835698039185473594}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &4835698037709342825
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4835698037430922263}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.1233014, y: 0.308385, z: 0.832036}
-  m_Center: {x: 0.0000006443924, y: 0.10873851, z: 0.37777394}
 --- !u!1 &4835698037774880504
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,7 +536,7 @@ MonoBehaviour:
   DoorPrefabPriority: 0
   DoorPrefabs: []
   BlockerPrefabs:
-  - {fileID: 176122, guid: 230ec277257f5374f878f2e5a50d413d, type: 3}
+  - {fileID: 8254883459897348056, guid: 230ec277257f5374f878f2e5a50d413d, type: 3}
   AvoidRotatingDoorPrefab: 0
   AvoidRotatingBlockerPrefab: 0
   AddWhenInUse: []
@@ -664,7 +677,7 @@ MonoBehaviour:
   DoorPrefabPriority: 0
   DoorPrefabs: []
   BlockerPrefabs:
-  - {fileID: 176122, guid: 230ec277257f5374f878f2e5a50d413d, type: 3}
+  - {fileID: 8254883459897348056, guid: 230ec277257f5374f878f2e5a50d413d, type: 3}
   AvoidRotatingDoorPrefab: 0
   AvoidRotatingBlockerPrefab: 0
   AddWhenInUse: []
@@ -675,19 +688,6 @@ MonoBehaviour:
   tile: {fileID: 0}
   connectedDoorway: {fileID: 0}
   hideConditionalObjects: 0
---- !u!65 &4835698038709913036
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4835698037430760075}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.1647456, y: 0.468608, z: 0.8101477}
-  m_Center: {x: -0.00000029802334, y: 0.234304, z: -0.0000004768374}
 --- !u!1 &4835698038812116757
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,7 +769,7 @@ MonoBehaviour:
   DoorPrefabPriority: 0
   DoorPrefabs: []
   BlockerPrefabs:
-  - {fileID: 176122, guid: 230ec277257f5374f878f2e5a50d413d, type: 3}
+  - {fileID: 8254883459897348056, guid: 230ec277257f5374f878f2e5a50d413d, type: 3}
   AvoidRotatingDoorPrefab: 0
   AvoidRotatingBlockerPrefab: 0
   AddWhenInUse: []

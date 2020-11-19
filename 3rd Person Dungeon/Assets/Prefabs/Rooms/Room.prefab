@@ -82,7 +82,7 @@ MonoBehaviour:
   DoorPrefabPriority: 0
   DoorPrefabs: []
   BlockerPrefabs:
-  - {fileID: 176122, guid: 230ec277257f5374f878f2e5a50d413d, type: 3}
+  - {fileID: 8254883459897348056, guid: 230ec277257f5374f878f2e5a50d413d, type: 3}
   AvoidRotatingDoorPrefab: 0
   AvoidRotatingBlockerPrefab: 0
   AddWhenInUse: []
@@ -592,7 +592,7 @@ MonoBehaviour:
   DoorPrefabPriority: 0
   DoorPrefabs: []
   BlockerPrefabs:
-  - {fileID: 176122, guid: 230ec277257f5374f878f2e5a50d413d, type: 3}
+  - {fileID: 8254883459897348056, guid: 230ec277257f5374f878f2e5a50d413d, type: 3}
   AvoidRotatingDoorPrefab: 0
   AvoidRotatingBlockerPrefab: 0
   AddWhenInUse: []
@@ -1277,7 +1277,7 @@ MonoBehaviour:
   DoorPrefabPriority: 0
   DoorPrefabs: []
   BlockerPrefabs:
-  - {fileID: 176122, guid: 230ec277257f5374f878f2e5a50d413d, type: 3}
+  - {fileID: 8254883459897348056, guid: 230ec277257f5374f878f2e5a50d413d, type: 3}
   AvoidRotatingDoorPrefab: 0
   AvoidRotatingBlockerPrefab: 0
   AddWhenInUse: []
