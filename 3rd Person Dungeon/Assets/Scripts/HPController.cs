@@ -5,27 +5,47 @@ using UnityEngine.UI;
 
 public class HPController : MonoBehaviour
 {
+    private GameObject player;
+    private GameObject camera;
+
     public float HP = 150f; // Хп игрока
+    private float fixedHP;
 
-    private Image hpBar; // Полоска хп
-    private Text hp; // Отображаемые хп
+    private Image hpBar;
+    private Image hpBarBack;
+    private Text hp;
 
-    private float lavaDamageDelay = 0.2f;
-    private float lavaFixedDelay = 0.2f;
+    private Image gameOver;
+
+    private bool isInLava = false;
+    private float lavaDamageDelay = 0.0125f;
 
     void Start()
     {
+        fixedHP = HP;
+
+        gameOver = GameObject.FindWithTag("GameOverImg").GetComponent<Image>();
+        player = GameObject.FindWithTag("Player");
+        camera = GameObject.FindWithTag("MainCamera");
+
         hpBar = GameObject.Find("Player Hp Bar").GetComponent<Image>();
+        hpBarBack = GameObject.Find("Player Hp Bar Back").GetComponent<Image>();
         hp = GameObject.Find("Player Hp").GetComponent<Text>();
+        
     }
 
     void Update()
     {
-        hpBar.rectTransform.position = new Vector3(885/1.3f, 20f, 0f);
-        hpBar.rectTransform.sizeDelta = new Vector2(HP, 20f);
+        Death();
 
+        hpBar.rectTransform.position = new Vector3((885 / 1.3f) - ((fixedHP - HP) / 2), 20f, 0f);
+        hpBarBack.rectTransform.position = new Vector3(885 / 1.3f, 20f, 0f);
         hp.rectTransform.position = new Vector3(885 / 1.3f, 20f, 0f);
-        hp.text = HP.ToString(); // Можно string.Format("{0:0.0}", HP)
+
+        hpBar.rectTransform.sizeDelta = new Vector2(HP, 20f);
+        hpBarBack.rectTransform.sizeDelta = new Vector2(fixedHP, 20f);
+
+        hp.text = HP.ToString();
 
         if (Input.GetKey(KeyCode.KeypadPlus))
         {
@@ -36,21 +56,51 @@ public class HPController : MonoBehaviour
             HP -= 1;
         }
 
+        if (isInLava)
+        {
+            lavaDamageDelay -= Time.deltaTime;
+        }
+        if (lavaDamageDelay <= 0 && HP > 0)
+        {
+            HP -= 1;
+            lavaDamageDelay = 0.0125f;
+        }
+    }
+
+    private void Death()
+    {
+        if (HP <= 0)
+        {
+            HP = 0;
+            gameOver.enabled = true;
+            player.GetComponent<PlayerMovement>().enabled = false;
+            player.GetComponent<MouseLook>().enabled = false;
+            player.GetComponentInChildren<Attack>().enabled = false;
+            camera.GetComponent<MouseLook>().enabled = false;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Lava")
         {
-            while (HP > 0)
-            {
-                if (lavaDamageDelay <= 0) 
-                {
-                    HP -= 0.5f;
-                    lavaDamageDelay = lavaFixedDelay;
-                }
-                lavaDamageDelay -= Time.deltaTime;
-            }
+            isInLava = true;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Lava")
+        {
+            isInLava = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Lava")
+        {
+            isInLava = false;
         }
     }
 }

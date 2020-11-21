@@ -10,6 +10,9 @@ public class Attack : MonoBehaviour
     public float dmg = 1f;
     private bool wasEnemyHitted = false;
     private bool isAttack = false;
+    private bool startDelay;
+    private bool delayFinished;
+    private float delay = 0.35f;
 
     void Start()
     {
@@ -20,6 +23,7 @@ public class Attack : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            startDelay = true;
             animator.SetBool("Attack", true);
             animator.SetBool("Idle", false);
         } else
@@ -36,14 +40,25 @@ public class Attack : MonoBehaviour
             isAttack = false;
             wasEnemyHitted = false;
         }
+        if (startDelay)
+        {
+            delay -= Time.deltaTime;
+        }
+        if (delay <= 0)
+        {
+            startDelay = false;
+            delayFinished = true;
+            delay = 0.35f;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Enemy" && !wasEnemyHitted && isAttack)
+        if (other.gameObject.tag == "Enemy" && !wasEnemyHitted && isAttack && delayFinished)
         {
             other.GetComponent<EnemyHP>().TakeDamage(dmg);
             wasEnemyHitted = true;
+            delayFinished = false;
         }
     }
 }

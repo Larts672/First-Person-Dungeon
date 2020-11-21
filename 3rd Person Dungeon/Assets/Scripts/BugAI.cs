@@ -26,9 +26,9 @@ public class BugAI : MonoBehaviour
 
     void Update()
     {
-        Chase(); // Преследование
+            Chase(); // Преследование
 
-        Attack(); // Атака
+            Attack(); // Атака
     }
 
     // stabAttackDelay = Random.Range(1.7f, 2.9f);
@@ -88,5 +88,13 @@ public class BugAI : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        /*if (other.gameObject.tag == "RoomColl")
+        {
+            other.gameObject.GetComponent<RoomController>().PlayerChecker(this.gameObject);
+        }*/
     }
 }

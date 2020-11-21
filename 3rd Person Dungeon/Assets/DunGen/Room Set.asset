@@ -42,7 +42,7 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      TileSet: {fileID: 11400000}
+      TileSet: {fileID: 0}
     - Value: {fileID: 466985697380056178, guid: 7a1a51af5cc43624e859562d1ecd5b14,
         type: 3}
       MainPathWeight: 1
@@ -71,5 +71,5 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      TileSet: {fileID: 11400000}
+      TileSet: {fileID: 0}
   LockPrefabs: []

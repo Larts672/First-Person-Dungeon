@@ -28,7 +28,7 @@ public class AdminsInfo : MonoBehaviour
 
         adminsInfo.text =
             "Camera mode: " + cameraMode + "\n" +
-            "Gravity: " + "<color=green>normal</color>" + "\n" +
+            "Gravity: <color=green>normal</color>" + "\n" +
             "<color=#FF0035><b>--- Position ---</b></color>" + "\n" +
             "x: " + string.Format("{0:0.000}", player.transform.position.x) + "\n" +
             "y: " + string.Format("{0:0.000}", player.transform.position.y) + "\n" +
@@ -37,7 +37,7 @@ public class AdminsInfo : MonoBehaviour
             "x: " + string.Format("{0:0.000}", plCamera.transform.rotation.x) + "\n" +
             "y: " + string.Format("{0:0.000}", player.transform.rotation.y) + "\n" +
             "<color=#FF0035><b>--- Buttons ---</b></color>" + "\n" + 
-            "<color=blue><b>C</b></color>" + " - camera switch" + "\n" +
-            "<color=blue><b>+/-</b></color>" + " - adding hp";
+            "<color=blue><b>C</b></color> - camera switch <color=red>(not recomended)</color>" + "\n" +
+            "<color=blue><b>+/-</b></color> - adding hp";
     }
 }

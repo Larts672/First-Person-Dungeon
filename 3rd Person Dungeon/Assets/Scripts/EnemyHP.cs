@@ -27,9 +27,9 @@ public class EnemyHP : MonoBehaviour
 
     private void Death()
     {
-        if (hp <= 0 && !animator.GetBool("Die"))
+        if (hp <= 0)
         {
-            animator.SetBool("Die", true);
+            gameObject.SetActive(false);
         }
     }
 }

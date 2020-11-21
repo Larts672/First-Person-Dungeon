@@ -156,6 +156,7 @@
     <Compile Include="Assets\Scripts\PlayerHit.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Product.cs" />
+    <Compile Include="Assets\Scripts\RoomController.cs" />
     <None Include="Assets\Packs\DUNGEON\Ultimate 10 Plus Shaders\Shaders\Edge Detection.shader" />
     <None Include="Assets\Packs\DUNGEON\Ultimate 10 Plus Shaders\Shaders\Grass Sway.shader" />
     <None Include="Assets\Packs\DUNGEON\Ultimate 10 Plus Shaders\Shaders\Blur.shader" />
@@ -170,7 +171,6 @@
     <None Include="Assets\Packs\DUNGEON\Ultimate 10 Plus Shaders\Shaders\Snow.shader" />
     <None Include="Assets\Packs\DUNGEON\Ultimate 10 Plus Shaders\Shaders\Lava3D.shader" />
     <None Include="Assets\Packs\DUNGEON\Ultimate 10 Plus Shaders\Shaders\Force Field.shader" />
-    <None Include="Assets\Materials\3D Text Shader.shader" />
     <None Include="Assets\Packs\DUNGEON\PARTICLES\PolygonParticles\Materials\SHARED BY LUXURYPANDA.txt" />
     <None Include="Assets\Packs\DUNGEON\Ultimate 10 Plus Shaders\Shaders\Simple Sine Wave.shader" />
     <Reference Include="UnityEngine">
