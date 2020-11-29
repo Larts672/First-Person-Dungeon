@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Comment.cs" />
+    <Compile Include="Assets\ExitScript.cs" />
     <Compile Include="Assets\Packs\DUNGEON\ELEMENTS\BrokenVector\UltimateDungeonPack\Scenes\Demo\FPControls\Scripts\CharacterController.cs" />
     <Compile Include="Assets\Packs\DUNGEON\ELEMENTS\BrokenVector\UltimateDungeonPack\Scenes\Demo\FPControls\Scripts\MouseCamLook.cs" />
     <Compile Include="Assets\Packs\DUNGEON\ELEMENTS\BrokenVector\UltimateDungeonPack\Scripts\LightImprove.cs" />
