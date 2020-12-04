@@ -20,6 +20,8 @@ public class HPController : MonoBehaviour
     private bool isInLava = false;
     private float lavaDamageDelay = 0.0125f;
 
+    private bool immortal = false;
+
     void Start()
     {
         fixedHP = HP;
@@ -36,6 +38,15 @@ public class HPController : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKey("i"))
+        {
+            immortal = true;
+        }
+        if (immortal)
+        {
+            HP = fixedHP;
+        }
+
         Death();
 
         hpBar.rectTransform.position = new Vector3((885 / 1.3f) - ((fixedHP - HP) / 2), 20f, 0f);

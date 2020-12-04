@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class BugAI : MonoBehaviour
 {
+    public float gravity = 1f;
+    private bool isFalling;
+
     public Animator bugAnim; // Аниматор
     public GameObject target; // Цель (не "player", т.к. может будут миньоны)
-    public float seeDistance = 8f; // Дальность видимости
+    public float seeDistance = 50f; // Дальность видимости
     public float attackDistance = 4f; // Дальность атаки
     public float speed = 4f; // Скорость
 
@@ -16,19 +19,24 @@ public class BugAI : MonoBehaviour
     public float smashAttackDelay; // Кулдаун атаки по площади
     public bool canSmashAttack = true;
 
-    public float hp = 3f;
 
     void Start()
     {
+        gravity = gravity / 25f;
         bugAnim = GetComponent<Animator>();
         target = GameObject.Find("Player");
     }
 
     void Update()
     {
-            Chase(); // Преследование
+        if (isFalling)
+        {
+            transform.Translate(new Vector3(0f, -gravity, 0f));
+        }
 
-            Attack(); // Атака
+        Chase(); // Преследование
+
+        Attack(); // Атака
     }
 
     // stabAttackDelay = Random.Range(1.7f, 2.9f);
@@ -90,11 +98,18 @@ public class BugAI : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        /*if (other.gameObject.tag == "RoomColl")
+        if (collision.gameObject.tag == "Ground")
         {
-            other.gameObject.GetComponent<RoomController>().PlayerChecker(this.gameObject);
-        }*/
+            isFalling = false;
+        }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
+            isFalling = true;
+        }
     }
 }

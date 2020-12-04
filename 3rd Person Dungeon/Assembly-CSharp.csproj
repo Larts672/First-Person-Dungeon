@@ -64,7 +64,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Comment.cs" />
-    <Compile Include="Assets\ExitScript.cs" />
     <Compile Include="Assets\Packs\DUNGEON\ELEMENTS\BrokenVector\UltimateDungeonPack\Scenes\Demo\FPControls\Scripts\CharacterController.cs" />
     <Compile Include="Assets\Packs\DUNGEON\ELEMENTS\BrokenVector\UltimateDungeonPack\Scenes\Demo\FPControls\Scripts\MouseCamLook.cs" />
     <Compile Include="Assets\Packs\DUNGEON\ELEMENTS\BrokenVector\UltimateDungeonPack\Scripts\LightImprove.cs" />
@@ -144,6 +143,7 @@
     <Compile Include="Assets\Packs\DUNGEON\Ultimate 10 Plus Shaders\Scripts\U10PS_MouseRotation.cs" />
     <Compile Include="Assets\Packs\DUNGEON\Ultimate 10 Plus Shaders\Scripts\U10PS_SnowOverTime.cs" />
     <Compile Include="Assets\Packs\DUNGEON\Ultimate 10 Plus Shaders\Shaders\Plexus\Plexus.cs" />
+    <Compile Include="Assets\PlayerDamage.cs" />
     <Compile Include="Assets\Scripts\AdminsInfo.cs" />
     <Compile Include="Assets\Scripts\Attack.cs" />
     <Compile Include="Assets\Scripts\AutomaticDoor.cs" />
@@ -152,9 +152,10 @@
     <Compile Include="Assets\Scripts\CameraSwitch.cs" />
     <Compile Include="Assets\Scripts\CharacterAnimation.cs" />
     <Compile Include="Assets\Scripts\EnemyHP.cs" />
+    <Compile Include="Assets\Scripts\ExitScript.cs" />
     <Compile Include="Assets\Scripts\HPController.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
-    <Compile Include="Assets\Scripts\PlayerHit.cs" />
+    <Compile Include="Assets\Scripts\PeaSooterAI.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Product.cs" />
     <Compile Include="Assets\Scripts\RoomController.cs" />
