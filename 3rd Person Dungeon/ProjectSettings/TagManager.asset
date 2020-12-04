@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - RoomColl
   - GameOverImg
+  - Grid
   layers:
   - Default
   - TransparentFX
