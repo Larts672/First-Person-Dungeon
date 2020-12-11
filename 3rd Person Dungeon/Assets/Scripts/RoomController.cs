@@ -8,6 +8,7 @@ public class RoomController : MonoBehaviour
     private bool isPlayerHere;
     public GameObject _Enemies;
     public bool enemiesSlayed;
+    public GameObject[] enemiesArr;
 
     public bool battle = false;
     public bool cleaned = false;
@@ -35,18 +36,26 @@ public class RoomController : MonoBehaviour
                         i.transform.Translate(new Vector3(0, -3f, 0));
                     }
                 }
-                for (int i = 0; i < transform.childCount; i++)
+                foreach (GameObject i in enemiesArr)
                 {
                     enemiesSlayed = true;
-                    if (transform.GetChild(i).gameObject.activeInHierarchy)
+                    if (i.activeSelf)
                     {
+                        Debug.LogError("actslf");
                         enemiesSlayed = false;
                     }
                 }
                 if (enemiesSlayed) {
                     battle = false;
                     cleaned = true;
+                    foreach (GameObject i in grids)
+                    {
+                        if (i.transform.position.y < 4)
+                        {
+                            i.transform.Translate(new Vector3(0, 3f, 0));
                         }
+                    }
+                }
             }
             /*if (!enemiesSlayed)
             {
@@ -77,16 +86,17 @@ public class RoomController : MonoBehaviour
                 }
             } */
 
-        }
-        else
+        
+}
+        if (cleaned)
         {
-            foreach (GameObject i in grids)
+            /*foreach (GameObject i in grids)
             {
                 if (i.transform.position.y < 4)
                 {
                     i.transform.Translate(new Vector3(0, 3f, 0));
                 }
-            }
+            }*/
         }
     }
 
@@ -96,17 +106,12 @@ public class RoomController : MonoBehaviour
             enemy.GetComponentInChildren<MessengerScript>().WakeUp();
         }
     }*/
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
             isPlayerHere = true;
             
-        }
-        else
-        {
-            
-            isPlayerHere = false;
         }
     }
 }

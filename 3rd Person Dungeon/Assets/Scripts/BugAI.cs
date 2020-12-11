@@ -29,6 +29,7 @@ public class BugAI : MonoBehaviour
 
     void Update()
     {
+
         if (isFalling)
         {
             transform.Translate(new Vector3(0f, -gravity, 0f));
