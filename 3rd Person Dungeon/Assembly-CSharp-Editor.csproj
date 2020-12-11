@@ -285,7 +285,7 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/GrechishnikovCosmos/First-Person-Dungeon/3rd Person Dungeon/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/ProgramFiles/UnityEditors/2019.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -642,55 +642,55 @@
       <HintPath>D:/ProgramFiles/UnityEditors/2019.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/GrechishnikovCosmos/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/GrechishnikovCosmos/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/GrechishnikovCosmos/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/GrechishnikovCosmos/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/GrechishnikovCosmos/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/GrechishnikovCosmos/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/GrechishnikovCosmos/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/GrechishnikovCosmos/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids.Editor">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/GrechishnikovCosmos/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/GrechishnikovCosmos/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/GrechishnikovCosmos/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/GrechishnikovCosmos/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/GrechishnikovCosmos/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/GrechishnikovCosmos/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/GrechishnikovCosmos/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/GrechishnikovCosmos/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/GrechishnikovCosmos/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

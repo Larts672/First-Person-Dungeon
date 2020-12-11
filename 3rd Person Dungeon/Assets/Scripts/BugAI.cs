@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class BugAI : MonoBehaviour
 {
-    public float gravity = 1f;
-    private bool isFalling;
 
     public Animator bugAnim; // Аниматор
     public GameObject target; // Цель (не "player", т.к. может будут миньоны)
@@ -22,18 +20,12 @@ public class BugAI : MonoBehaviour
 
     void Start()
     {
-        gravity = gravity / 25f;
         bugAnim = GetComponent<Animator>();
         target = GameObject.Find("Player");
     }
 
     void Update()
     {
-
-        if (isFalling)
-        {
-            transform.Translate(new Vector3(0f, -gravity, 0f));
-        }
 
         Chase(); // Преследование
 
@@ -103,14 +95,14 @@ public class BugAI : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ground")
         {
-            isFalling = false;
+            
         }
     }
     private void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.tag == "Ground")
         {
-            isFalling = true;
+            
         }
     }
 }

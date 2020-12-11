@@ -18,6 +18,7 @@ public class EnemyHP : MonoBehaviour
         Death();
     }
 
+
     public void TakeDamage(float damage)
     {
         animator.SetBool("Take Damage", true);

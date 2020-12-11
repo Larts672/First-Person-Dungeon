@@ -10,6 +10,7 @@ TagManager:
   - RoomColl
   - GameOverImg
   - Grid
+  - Projectile
   layers:
   - Default
   - TransparentFX
