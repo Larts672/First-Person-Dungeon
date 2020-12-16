@@ -15,7 +15,11 @@ public class RoomController : MonoBehaviour
 
     void Start()
     {
+        enemiesArr = new GameObject[_Enemies.transform.childCount];
         grids = GameObject.FindGameObjectsWithTag("Grid");
+        for(int i=0; i<_Enemies.transform.childCount; i++){
+            enemiesArr[i] = _Enemies.transform.GetChild(i).gameObject;
+        }
     }
 
     void Update()
@@ -36,12 +40,11 @@ public class RoomController : MonoBehaviour
                         i.transform.Translate(new Vector3(0, -3f, 0));
                     }
                 }
+                enemiesSlayed = true;
                 foreach (GameObject i in enemiesArr)
                 {
-                    enemiesSlayed = true;
                     if (i.activeSelf)
                     {
-                        Debug.LogError("actslf");
                         enemiesSlayed = false;
                     }
                 }
