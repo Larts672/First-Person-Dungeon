@@ -1337,7 +1337,7 @@ MonoBehaviour:
   seeDistance: 50
   attackDistance: 10
   speed: 4
-  rotateSpeed: 2
+  rotateSpeed: 4
   attackPlace: {fileID: 8625685000287327988}
   projectile: {fileID: 1545240088093306, guid: 359874f8488ee1e42b8e1bf9ad5755f0, type: 3}
   canAttack: 1
@@ -1355,8 +1355,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fd2aaf073b8b864b963de609e0ae8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxMoney: 3
+  minMoney: 0
   animator: {fileID: 8567647691075230827}
   hp: 40
+  _FinishData: {fileID: 0}
 --- !u!54 &8542679991263941888
 Rigidbody:
   m_ObjectHideFlags: 0

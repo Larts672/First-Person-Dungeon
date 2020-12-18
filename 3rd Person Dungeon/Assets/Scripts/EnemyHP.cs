@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class EnemyHP : MonoBehaviour
 {
+    public float maxMoney;
+    public float minMoney;
     public Animator animator;
     public float hp;
+    public FinishData _FinishData;
     
     void Start()
     {
+        _FinishData = GameObject.Find("Finish Data").GetComponent<FinishData>();
         animator = GetComponent<Animator>();
         Debug.Log("HP: " + hp);
     }
@@ -31,6 +35,9 @@ public class EnemyHP : MonoBehaviour
         if (hp <= 0)
         {
             gameObject.SetActive(false);
+            int droppedMoney = (int)Random.Range(minMoney, maxMoney);
+            _FinishData.money += droppedMoney;
+
         }
     }
 }

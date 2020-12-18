@@ -43,7 +43,6 @@ public class PeaSooterAI : MonoBehaviour
         {
             if (attackDelay<0)
             {
-                Debug.LogError("some kind of shit");
                 peaAnim.SetTrigger("Projectile Attack");
                 Instantiate(projectile, attackPlace.position, transform.rotation);
 
