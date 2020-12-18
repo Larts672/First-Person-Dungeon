@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HPController : MonoBehaviour
@@ -15,8 +16,6 @@ public class HPController : MonoBehaviour
     private Image hpBarBack;
     private Text hp;
 
-    private Image gameOver;
-
     private bool isInLava = false;
     private float lavaDamageDelay = 0.0125f;
 
@@ -26,7 +25,6 @@ public class HPController : MonoBehaviour
     {
         fixedHP = HP;
 
-        gameOver = GameObject.FindWithTag("GameOverImg").GetComponent<Image>();
         player = GameObject.FindWithTag("Player");
         camera = GameObject.FindWithTag("MainCamera");
 
@@ -83,11 +81,15 @@ public class HPController : MonoBehaviour
         if (HP <= 0)
         {
             HP = 0;
-            gameOver.enabled = true;
             player.GetComponent<PlayerMovement>().enabled = false;
             player.GetComponent<MouseLook>().enabled = false;
             player.GetComponentInChildren<Attack>().enabled = false;
             camera.GetComponent<MouseLook>().enabled = false;
+
+            Cursor.lockState = CursorLockMode.None;
+            DontDestroyOnLoad(GameObject.Find("Finish Data"));
+            GameObject.Find("Finish Data").GetComponent<FinishData>().finishType = 0;
+            SceneManager.LoadScene(1, LoadSceneMode.Single);
         }
     }
 

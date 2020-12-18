@@ -16,8 +16,8 @@ ScriptsOnlyBuild:
     - DunGen.RuntimeDungeon
     - DunGen.TileSet
     - EnemyHP
-    - ExitScript
     - FinalScreen
+    - FinishData
     - HPController
     - MouseLook
     - PeaSooterAI
@@ -26,13 +26,16 @@ ScriptsOnlyBuild:
     - Product
     - ProjectileFly
     - RoomController
+    - UseScript
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -67,23 +70,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 12078}
+      Script: {instanceID: 12080}
     - Class: 114
-      Script: {instanceID: 12338}
+      Script: {instanceID: 12340}
     - Class: 114
-      Script: {instanceID: 12390}
+      Script: {instanceID: 12392}
     - Class: 114
-      Script: {instanceID: 12946}
+      Script: {instanceID: 12948}
     - Class: 114
-      Script: {instanceID: 13536}
+      Script: {instanceID: 13270}
     - Class: 114
-      Script: {instanceID: 14240}
+      Script: {instanceID: 13540}
     - Class: 114
-      Script: {instanceID: 14258}
+      Script: {instanceID: 14246}
     - Class: 114
-      Script: {instanceID: 14794}
+      Script: {instanceID: 14264}
     - Class: 114
-      Script: {instanceID: 231768}
+      Script: {instanceID: 14800}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -142,61 +145,65 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 12078}
+      Script: {instanceID: 12080}
     - Class: 114
-      Script: {instanceID: 12220}
+      Script: {instanceID: 12222}
     - Class: 114
-      Script: {instanceID: 12300}
+      Script: {instanceID: 12302}
     - Class: 114
-      Script: {instanceID: 12338}
+      Script: {instanceID: 12340}
     - Class: 114
-      Script: {instanceID: 12390}
-    - Class: 114
-      Script: {instanceID: 12786}
+      Script: {instanceID: 12392}
     - Class: 114
       Script: {instanceID: 12788}
     - Class: 114
-      Script: {instanceID: 12824}
+      Script: {instanceID: 12790}
     - Class: 114
-      Script: {instanceID: 12946}
+      Script: {instanceID: 12826}
     - Class: 114
-      Script: {instanceID: 12984}
+      Script: {instanceID: 12948}
     - Class: 114
-      Script: {instanceID: 13024}
+      Script: {instanceID: 12986}
     - Class: 114
-      Script: {instanceID: 13092}
+      Script: {instanceID: 13026}
     - Class: 114
-      Script: {instanceID: 13248}
+      Script: {instanceID: 13094}
     - Class: 114
-      Script: {instanceID: 13304}
+      Script: {instanceID: 13250}
     - Class: 114
-      Script: {instanceID: 13320}
+      Script: {instanceID: 13308}
     - Class: 114
-      Script: {instanceID: 13364}
+      Script: {instanceID: 13324}
     - Class: 114
-      Script: {instanceID: 13476}
+      Script: {instanceID: 13368}
     - Class: 114
-      Script: {instanceID: 13600}
+      Script: {instanceID: 13480}
     - Class: 114
       Script: {instanceID: 13604}
     - Class: 114
-      Script: {instanceID: 13808}
+      Script: {instanceID: 13608}
     - Class: 114
-      Script: {instanceID: 13872}
+      Script: {instanceID: 13812}
     - Class: 114
-      Script: {instanceID: 14082}
+      Script: {instanceID: 13876}
     - Class: 114
-      Script: {instanceID: 14258}
+      Script: {instanceID: 14086}
     - Class: 114
-      Script: {instanceID: 14272}
+      Script: {instanceID: 14264}
     - Class: 114
-      Script: {instanceID: 14520}
+      Script: {instanceID: 14278}
     - Class: 114
-      Script: {instanceID: 14794}
+      Script: {instanceID: 14526}
     - Class: 114
       Script: {instanceID: 14800}
     - Class: 114
-      Script: {instanceID: 76934}
+      Script: {instanceID: 14806}
+    - Class: 114
+      Script: {instanceID: 76946}
+    - Class: 114
+      Script: {instanceID: 254270}
+    - Class: 114
+      Script: {instanceID: 277298}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -556,6 +563,12 @@ ScriptsOnlyBuild:
     className: PlayerDamage
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CanvasScript
+  - hash:
+      serializedVersion: 2
       Hash: 10e9e6706d9cbfc2add17ed2eac4d5fc
     assemblyName: Assembly-CSharp.dll
     namespaceName: DunGen.Demo
@@ -856,12 +869,6 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: a1527141015f9884848f274120dd2ffa
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CharacterAnimation
-  - hash:
-      serializedVersion: 2
       Hash: 6e843f57598da83a8bd6a8161ac6a86c
     assemblyName: Assembly-CSharp.dll
     namespaceName: DunGen
@@ -982,10 +989,10 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 76816b8b0eadd3788a2036abbb8b5b1a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ExitScript
+    className: UseScript
   - hash:
       serializedVersion: 2
       Hash: aa88ae22474df55295327e4ee99e5a24
@@ -998,12 +1005,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalEmitter
-  - hash:
-      serializedVersion: 2
-      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AutomaticDoor
   - hash:
       serializedVersion: 2
       Hash: 7072231382eb3c4871b3dd75ad0227e1
@@ -1024,13 +1025,12 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 9c16d04afd8402fbfb5450476bb557f6
+      Hash: f991f17a7a7da3c9d724fc777bbd32da
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: CanvasScript
+    className: FinishData
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainScene.unity
   - Assets/Scenes/FinalScreen.unity
-  playerPath: D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/App/3rd
-    Person Dungeon.exe
+  playerPath: D:/Unity Projects/First-Person-Dungeon/App/3rd Person Dungeon.exe
