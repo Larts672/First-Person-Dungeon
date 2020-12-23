@@ -10,7 +10,8 @@ public class HPController : MonoBehaviour
     private GameObject camera;
 
     public float HP = 150f; // Хп игрока
-    private float fixedHP;
+    public float fixedHP;
+    public float maxHP;
 
     private Image hpBar;
     private Image hpBarBack;
@@ -23,6 +24,7 @@ public class HPController : MonoBehaviour
 
     void Start()
     {
+        maxHP = HP;
         fixedHP = HP;
 
         player = GameObject.FindWithTag("Player");
