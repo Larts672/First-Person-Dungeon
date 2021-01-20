@@ -446,7 +446,9 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4835698037849685122}
-  m_Text: I forgot my lines
+  m_Text: '
+
+'
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -898,7 +900,6 @@ MonoBehaviour:
   originalFlameSword: {fileID: 138024, guid: 6d137d44990918a48bfc447d3dda3796, type: 3}
   Artifacts:
   - {fileID: 9134004159275594589, guid: 8b0d5dd64019fc942a1cc0fa5d77489e, type: 3}
-  - {fileID: 2655555502645321486, guid: 57da1aabd8d9ee8499754b2633887fe1, type: 3}
   isSold: 0
 --- !u!1 &4835698039135789292
 GameObject:

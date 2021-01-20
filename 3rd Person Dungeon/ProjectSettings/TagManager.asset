@@ -12,6 +12,7 @@ TagManager:
   - Grid
   - Projectile
   - ExitSphere
+  - Wall
   layers:
   - Default
   - TransparentFX

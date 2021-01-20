@@ -49,9 +49,9 @@ public class HPController : MonoBehaviour
 
         Death();
 
-        hpBar.rectTransform.position = new Vector3((885 / 1.3f) - ((fixedHP - HP) / 2), 20f, 0f);
-        hpBarBack.rectTransform.position = new Vector3(885 / 1.3f, 20f, 0f);
-        hp.rectTransform.position = new Vector3(885 / 1.3f, 20f, 0f);
+        hpBar.rectTransform.position = new Vector3((Screen.width / 2.1f) - ((fixedHP - HP) / 2), 0.0226f * Screen.height, 0f);
+        hpBarBack.rectTransform.position = new Vector3(Screen.width / 2.1f, 0.0226f * Screen.height, 0f);
+        hp.rectTransform.position = new Vector3(Screen.width / 2.1f, 0.0226f * Screen.height, 0f);
 
         hpBar.rectTransform.sizeDelta = new Vector2(HP, 20f);
         hpBarBack.rectTransform.sizeDelta = new Vector2(fixedHP, 20f);

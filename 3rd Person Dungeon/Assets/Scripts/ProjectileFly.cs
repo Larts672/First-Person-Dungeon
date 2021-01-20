@@ -16,4 +16,12 @@ public class ProjectileFly : MonoBehaviour
     {
         transform.Translate(0, 0, speed * Time.deltaTime, Space.Self);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Wall")
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }
