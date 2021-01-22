@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &9500713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1069,7 +1069,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4526463827110206, guid: 5aed7f791a03c2a4ba0040d2fa161639, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.5153067
+      value: 10.47
       objectReference: {fileID: 0}
     - target: {fileID: 4526463827110206, guid: 5aed7f791a03c2a4ba0040d2fa161639, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1077,7 +1077,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4526463827110206, guid: 5aed7f791a03c2a4ba0040d2fa161639, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.088402
+      value: 18.16
       objectReference: {fileID: 0}
     - target: {fileID: 4526463827110206, guid: 5aed7f791a03c2a4ba0040d2fa161639, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1447,7 +1447,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1087787115
 Transform:
   m_ObjectHideFlags: 0
@@ -1783,8 +1783,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathEffect: {fileID: 0}
-  maxMoney: 0
-  minMoney: 0
+  maxMoney: 1e+9
+  minMoney: 1e+9
   animator: {fileID: 1520457801}
   hp: 1150
   _FinishData: {fileID: 0}
@@ -2004,7 +2004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1819220189
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2072,6 +2072,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1087787115}
     m_Modifications:
+    - target: {fileID: 1283306996441732959, guid: ca6e0ada644d4b04b964e5e39173fddb,
+        type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4835698038343134841, guid: ca6e0ada644d4b04b964e5e39173fddb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2135,7 +2140,7 @@ PrefabInstance:
     - target: {fileID: 4835698038343134842, guid: ca6e0ada644d4b04b964e5e39173fddb,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca6e0ada644d4b04b964e5e39173fddb, type: 3}
@@ -2434,7 +2439,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 164490947, guid: ff4d7ab877f260a4598389e31e93b69c, type: 3}
       propertyPath: maxMoney
-      value: 1000
+      value: 999
       objectReference: {fileID: 0}
     - target: {fileID: 164490947, guid: ff4d7ab877f260a4598389e31e93b69c, type: 3}
       propertyPath: minMoney
@@ -2443,7 +2448,7 @@ PrefabInstance:
     - target: {fileID: 7251759066224788936, guid: ff4d7ab877f260a4598389e31e93b69c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5
+      value: 8.25
       objectReference: {fileID: 0}
     - target: {fileID: 7251759066224788936, guid: ff4d7ab877f260a4598389e31e93b69c,
         type: 3}
@@ -2453,7 +2458,7 @@ PrefabInstance:
     - target: {fileID: 7251759066224788936, guid: ff4d7ab877f260a4598389e31e93b69c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.5
+      value: 4.54
       objectReference: {fileID: 0}
     - target: {fileID: 7251759066224788936, guid: ff4d7ab877f260a4598389e31e93b69c,
         type: 3}

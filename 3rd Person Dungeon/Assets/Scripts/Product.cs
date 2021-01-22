@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Product : MonoBehaviour
 {
     private GameObject player;
     private GameObject finishData;
     public GameObject productInfo;
+    public Canvas canvas;
     public int healPotionPrice;
     public int holyGrenadePrice;
     public string potionOfHealName = "Potion of Heal";
@@ -22,15 +24,14 @@ public class Product : MonoBehaviour
     public GameObject[] Artifacts;
     public bool isSold = false;
 
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         finishData = GameObject.Find("Finish Data");
 
         productNumber = Random.Range(0, Artifacts.Length);
-        productInfo = GameObject.Find("Product Info");
-        productInfo.GetComponent<MeshRenderer>().enabled = false;
-        productInfo.transform.localScale = new Vector3(-0.1f, 0.1f, 0.1f);
+        productInfo.GetComponent< TextMeshProUGUI>().text = "";
 
         if (productNumber == 0) { currentPrice = healPotionPrice; currentName = potionOfHealName; };
         if (productNumber == 1) { currentPrice = holyGrenadePrice; currentName = holyGrenadeName; };
@@ -38,18 +39,12 @@ public class Product : MonoBehaviour
 
         product = Instantiate(Artifacts[productNumber], transform);
         product.transform.rotation = Quaternion.Euler(-30f, 0f, 0f);
-        //product.transform.localScale = new Vector3(0.45f, 0.45f, 0.45f);
-
-        /*originalFlameSword.transform.position = transform.position;
-        flameSword = Instantiate(originalFlameSword);
-        flameSword.transform.rotation = Quaternion.Euler(-30f, 0f, 0f);
-        flameSword.transform.localScale = new Vector3(0.45f, 0.45f, 0.45f);*/
     }
 
     void Update()
     {
-        productInfo.transform.LookAt(player.transform);
-        if (Vector3.Distance(player.transform.position, productInfo.transform.position) <= 2.25f)
+        canvas.GetComponent<RectTransform>().LookAt(player.transform);
+        if (Vector3.Distance(player.transform.position, canvas.GetComponent<RectTransform>().position) <= 3.5f)
         {
             if (Input.GetKeyDown("e") && finishData.GetComponent<FinishData>().money>=currentPrice && !isSold)
             {
@@ -60,19 +55,19 @@ public class Product : MonoBehaviour
                 finishData.GetComponent<FinishData>().money -= currentPrice;
                 isSold = true;
             }
-            productInfo.GetComponent<MeshRenderer>().enabled = true;
+            productInfo.GetComponent<TextMeshProUGUI>().enabled = true;
         } else
         {
-            productInfo.GetComponent<MeshRenderer>().enabled = false;
+            productInfo.GetComponent<TextMeshProUGUI>().enabled = false;
         }
         //flameSword.transform.Rotate(0f, 0.5f, 0f, Space.Self);
         if (!isSold)
         {
-            productInfo.GetComponent<TextMesh>().text = currentName + ": " + "<b><color=yellow>"+currentPrice+"</color></b>" + " coins";
+            productInfo.GetComponent<TextMeshProUGUI>().text  = currentName + ": " + "<b><color=yellow>"+currentPrice+"</color></b>" + " coins";
         }
         else
         {
-            productInfo.GetComponent<TextMesh>().text = currentName;
+            productInfo.GetComponent<TextMeshProUGUI>().text = currentName;
         }
         product.transform.Rotate(0f, 0.5f, 0f, Space.Self);
     }
