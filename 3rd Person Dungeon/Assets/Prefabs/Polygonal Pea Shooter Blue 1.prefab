@@ -1355,6 +1355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fd2aaf073b8b864b963de609e0ae8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathEffect: {fileID: 198121459679799664, guid: 6b53f11a200576c43b6ff6f227bdcfa6,
+    type: 3}
   maxMoney: 3
   minMoney: 0
   animator: {fileID: 8567647691075230827}

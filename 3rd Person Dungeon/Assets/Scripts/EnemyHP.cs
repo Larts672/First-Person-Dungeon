@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyHP : MonoBehaviour
 {
+    public ParticleSystem deathEffect;
     public float maxMoney;
     public float minMoney;
     public Animator animator;
@@ -34,6 +35,7 @@ public class EnemyHP : MonoBehaviour
     {
         if (hp <= 0)
         {
+            Instantiate(deathEffect, this.transform.position + new Vector3(0,1,0), this.transform.rotation);
             gameObject.SetActive(false);
             int droppedMoney = (int)Random.Range(minMoney, maxMoney);
             _FinishData.money += droppedMoney;
