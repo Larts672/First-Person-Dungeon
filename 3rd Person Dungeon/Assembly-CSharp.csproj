@@ -47,6 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>4.8.2.0</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>2019.4.12f1</UnityVersion>
@@ -143,10 +144,12 @@
     <Compile Include="Assets\Packs\DUNGEON\Ultimate 10 Plus Shaders\Scripts\U10PS_MouseRotation.cs" />
     <Compile Include="Assets\Packs\DUNGEON\Ultimate 10 Plus Shaders\Scripts\U10PS_SnowOverTime.cs" />
     <Compile Include="Assets\Packs\DUNGEON\Ultimate 10 Plus Shaders\Shaders\Plexus\Plexus.cs" />
+    <Compile Include="Assets\Scripts\AI\BugAI.cs" />
+    <Compile Include="Assets\Scripts\AI\PeaSooterAI.cs" />
+    <Compile Include="Assets\Scripts\AI\TripletAI.cs" />
     <Compile Include="Assets\Scripts\AdminsInfo.cs" />
     <Compile Include="Assets\Scripts\Attack.cs" />
     <Compile Include="Assets\Scripts\BossBarController.cs" />
-    <Compile Include="Assets\Scripts\BugAI.cs" />
     <Compile Include="Assets\Scripts\CameraSwitch.cs" />
     <Compile Include="Assets\Scripts\CanvasScript.cs" />
     <Compile Include="Assets\Scripts\EnemyHP.cs" />
@@ -154,7 +157,6 @@
     <Compile Include="Assets\Scripts\FinishData.cs" />
     <Compile Include="Assets\Scripts\HPController.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
-    <Compile Include="Assets\Scripts\PeaSooterAI.cs" />
     <Compile Include="Assets\Scripts\PlayerDamage.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Product.cs" />

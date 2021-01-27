@@ -642,6 +642,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &450486885 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8795267865289742111, guid: 137596a4265b03c40a8e755887dcd436,
+    type: 3}
+  m_PrefabInstance: {fileID: 732891288}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,6 +746,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 897364515}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &732891288
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1087787115}
+    m_Modifications:
+    - target: {fileID: -2913236164731573894, guid: 137596a4265b03c40a8e755887dcd436,
+        type: 3}
+      propertyPath: rangedAttackDistance
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792493579555773081, guid: 137596a4265b03c40a8e755887dcd436,
+        type: 3}
+      propertyPath: m_Name
+      value: Polygonal Plant Dionaea Yellow 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795267865289742111, guid: 137596a4265b03c40a8e755887dcd436,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795267865289742111, guid: 137596a4265b03c40a8e755887dcd436,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795267865289742111, guid: 137596a4265b03c40a8e755887dcd436,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795267865289742111, guid: 137596a4265b03c40a8e755887dcd436,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795267865289742111, guid: 137596a4265b03c40a8e755887dcd436,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795267865289742111, guid: 137596a4265b03c40a8e755887dcd436,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795267865289742111, guid: 137596a4265b03c40a8e755887dcd436,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795267865289742111, guid: 137596a4265b03c40a8e755887dcd436,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795267865289742111, guid: 137596a4265b03c40a8e755887dcd436,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795267865289742111, guid: 137596a4265b03c40a8e755887dcd436,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795267865289742111, guid: 137596a4265b03c40a8e755887dcd436,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 137596a4265b03c40a8e755887dcd436, type: 3}
 --- !u!1 &825330838
 GameObject:
   m_ObjectHideFlags: 1
@@ -1465,6 +1545,7 @@ Transform:
   - {fileID: 4252450475672305}
   - {fileID: 2062106987}
   - {fileID: 1081670417}
+  - {fileID: 450486885}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2140,7 +2221,7 @@ PrefabInstance:
     - target: {fileID: 4835698038343134842, guid: ca6e0ada644d4b04b964e5e39173fddb,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca6e0ada644d4b04b964e5e39173fddb, type: 3}
@@ -2508,7 +2589,7 @@ PrefabInstance:
     - target: {fileID: 7253228102791600666, guid: ff4d7ab877f260a4598389e31e93b69c,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff4d7ab877f260a4598389e31e93b69c, type: 3}
