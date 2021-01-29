@@ -693,7 +693,6 @@ GameObject:
   - component: {fileID: 5025711154632536479}
   - component: {fileID: 5574944112773331117}
   - component: {fileID: 7868167543356895081}
-  - component: {fileID: -2913236164731573894}
   m_Layer: 0
   m_Name: Polygonal Plant Dionaea Yellow 1
   m_TagString: Enemy
@@ -783,7 +782,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 1.6145828
   m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.75, z: 0}
 --- !u!54 &5025711154632536479
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -795,7 +794,7 @@ Rigidbody:
   m_Mass: 40
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -828,36 +827,13 @@ MonoBehaviour:
   peaAnim: {fileID: 0}
   target: {fileID: 0}
   seeDistance: 50
-  rangedAttackDistance: 1500
+  rangedAttackDistance: 10
   speed: 4
   rotateSpeed: 2
   attackPlace: {fileID: 0}
   projectile: {fileID: 0}
   canAttack: 1
   attackDelay: 1.5
-  rotationVec: {x: 0, y: 0, z: 0}
---- !u!114 &-2913236164731573894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8792493579555773081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a434aa96a5e060e4b8983eda79c0f8ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  peaAnim: {fileID: 0}
-  target: {fileID: 0}
-  seeDistance: 50
-  rangedAttackDistance: 2
-  speed: 4
-  rotateSpeed: 2
-  attackPlace: {fileID: 0}
-  projectile: {fileID: 1545240088093306, guid: 359874f8488ee1e42b8e1bf9ad5755f0, type: 3}
-  canAttack: 1
-  attackDelay: 8
   rotationVec: {x: 0, y: 0, z: 0}
 --- !u!1 &8792570310002226355
 GameObject:
