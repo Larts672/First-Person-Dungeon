@@ -47,7 +47,6 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>4.8.2.0</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>2019.4.12f1</UnityVersion>
@@ -738,49 +737,49 @@
       <HintPath>D:/ProgramFiles/UnityEditors/2019.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/SviridovA/Unity/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+      <HintPath>D:/UnityProjects/SviridovA/Unity/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/SviridovA/Unity/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+      <HintPath>D:/UnityProjects/SviridovA/Unity/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/SviridovA/Unity/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+      <HintPath>D:/UnityProjects/SviridovA/Unity/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids.Editor">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/SviridovA/Unity/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/SviridovA/Unity/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/UnityProjects/SviridovA/Unity/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/UnityProjects/SviridovA/Unity/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/SviridovA/Unity/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/SviridovA/Unity/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/SviridovA/Unity/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/UnityProjects/SviridovA/Unity/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/UnityProgects/GreshishnikovM/Unity/FPD real rep/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/UnityProjects/SviridovA/Unity/First-Person-Dungeon/3rd Person Dungeon/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

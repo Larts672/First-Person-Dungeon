@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 678, y: 471}
+  m_MinSize: {x: 677, y: 471}
   m_MaxSize: {x: 14000, y: 14021}
   vertical: 0
-  controlID: 57367
+  controlID: 763
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,10 +138,10 @@ MonoBehaviour:
     y: 0
     width: 1635
     height: 947
-  m_MinSize: {x: 403, y: 471}
+  m_MinSize: {x: 402, y: 471}
   m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 57368
+  controlID: 764
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,10 +163,10 @@ MonoBehaviour:
     y: 0
     width: 1635
     height: 676
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 57348
+  controlID: 765
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -186,8 +186,8 @@ MonoBehaviour:
     y: 0
     width: 393
     height: 676
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -224,7 +224,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 
+      m_ExpandedIDs: 7a87ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -306,16 +306,16 @@ MonoBehaviour:
   m_ShowContextualTools: 0
   m_WindowGUID: 041913bb91d8d074ebb76399924a3558
   m_Gizmos: 1
-  m_SceneIsLit: 0
+  m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.20075887, y: 0.10648927, z: 0.0029999763}
+    m_Target: {x: -180.31856, y: -199.97087, z: 9.885034}
     speed: 2
-    m_Value: {x: -0.20075887, y: 0.10648927, z: 0.0029999763}
+    m_Value: {x: -180.31856, y: -199.97087, z: 9.885034}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_SceneViewState:
     showFog: 1
     showMaterialUpdate: 1
-    showSkybox: 0
+    showSkybox: 1
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
@@ -361,20 +361,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.024838753, y: 0.97057253, z: -0.21974412, w: 0.098738596}
+    m_Target: {x: 0.28759924, y: -0.6155318, z: 0.26261625, w: 0.6856374}
     speed: 2
-    m_Value: {x: 0.0248305, y: 0.97025007, z: -0.2196711, w: 0.09870579}
+    m_Value: {x: 0.28750452, y: -0.61532915, z: 0.2625298, w: 0.68541163}
   m_Size:
-    m_Target: 1.0615282
+    m_Target: 141.30777
     speed: 2
-    m_Value: 1.0615282
+    m_Value: 141.30777
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 0.07
-    m_SpeedNormalized: 0.029999996
+    m_Speed: 0.5
+    m_SpeedNormalized: 0.26999998
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -385,7 +385,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.09878833, y: 0.76158845, z: 0.12458247, w: 0.62870663}
+  m_LastSceneViewRotation: {x: -0.0025595948, y: -0.9998855, z: -0.029119669, w: -0.0051171584}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -941,10 +941,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: a8555c0cff30527479e32562cef9141f,
+  m_AnimatorController: {fileID: 9100000, guid: 786bf8339e6c30b42be24f6e8454c0df,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 1107352250216088808, guid: a8555c0cff30527479e32562cef9141f,
+  - m_Target: {fileID: 1107707408647610912, guid: 786bf8339e6c30b42be24f6e8454c0df,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -1030,15 +1030,15 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Prefabs
   m_LastFoldersGridSize: 74
-  m_LastProjectPath: D:\UnityProgects\GreshishnikovM\Unity\FPD real rep\First-Person-Dungeon\3rd
-    Person Dungeon
+  m_LastProjectPath: D:\UnityProjects\SviridovA\Unity\First-Person-Dungeon\3rd Person
+    Dungeon
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 510}
-    m_SelectedIDs: a0af0000
-    m_LastClickedID: 44960
-    m_ExpandedIDs: 0000000090af000092af000094af000096af000098af00009aaf00009caf00009eaf0000a0af0000a2af0000a4af0000a6af0000a8af0000aaaf0000acaf0000aeaf0000b0af0000b2af0000b4af0000b6af0000b8af0000baaf0000bcaf0000beaf000000ca9a3b
+    scrollPos: {x: 0, y: 410}
+    m_SelectedIDs: 18b00000
+    m_LastClickedID: 45080
+    m_ExpandedIDs: 0000000008b000000ab000000cb000000eb0000010b0000012b0000014b0000016b0000018b000001ab000001cb000001eb0000020b0000022b0000024b0000026b0000028b000002ab000002cb000002eb0000030b0000032b0000034b0000036b0000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1066,7 +1066,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000090af000092af000094af000096af000098af00009aaf00009caf00009eaf0000a0af0000a2af0000a4af0000a6af0000a8af0000aaaf0000acaf0000aeaf0000b0af0000b2af0000b4af0000b6af0000b8af0000baaf0000bcaf0000beaf000000ca9a3b
+    m_ExpandedIDs: 0000000008b000000ab000000cb000000eb0000010b0000012b0000014b0000016b0000018b000001ab000001cb000001eb0000020b0000022b0000024b0000026b0000028b000002ab000002cb000002eb0000030b0000032b0000034b0000036b0000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1091,9 +1091,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 68830000
-    m_LastClickedInstanceID: 33640
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000060400000061d0100a23902003e4502009e3700005e610000acad0300b4ad030000000000268a0000a6160100c4200100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1211,8 +1211,8 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: 33640
-  m_LastVerticalScrollValue: 712
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
