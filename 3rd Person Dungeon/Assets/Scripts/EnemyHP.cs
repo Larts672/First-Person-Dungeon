@@ -35,7 +35,14 @@ public class EnemyHP : MonoBehaviour
     {
         if (hp <= 0)
         {
-            Instantiate(deathEffect, this.transform.position + new Vector3(0,1,0), this.transform.rotation);
+            if (this.gameObject.tag == "Enemy")
+            {
+                Instantiate(deathEffect, this.transform.position + new Vector3(0, 1, 0), this.transform.rotation);
+            } else if (this.gameObject.tag == "Frightfly")
+            {
+                Instantiate(deathEffect, this.transform.position + new Vector3(0, 3, 0), this.transform.rotation);
+            }
+            
             gameObject.SetActive(false);
             int droppedMoney = (int)Random.Range(minMoney, maxMoney);
             _FinishData.money += droppedMoney;

@@ -54,7 +54,7 @@ public class Attack : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Enemy" && !wasEnemyHitted && isAttack && delayFinished)
+        if ((other.gameObject.tag == "Enemy" | other.gameObject.tag == "Frightfly") && !wasEnemyHitted && isAttack && delayFinished)
         {
             other.GetComponent<EnemyHP>().TakeDamage(dmg);
             wasEnemyHitted = true;
