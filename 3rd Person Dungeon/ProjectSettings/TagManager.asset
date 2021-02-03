@@ -13,7 +13,6 @@ TagManager:
   - Projectile
   - ExitSphere
   - Wall
-  - Frightfly
   layers:
   - Default
   - TransparentFX

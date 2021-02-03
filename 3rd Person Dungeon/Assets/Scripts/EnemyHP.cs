@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyHP : MonoBehaviour
 {
+    public GameObject body;
     public ParticleSystem deathEffect;
     public float maxMoney;
     public float minMoney;
@@ -26,8 +27,8 @@ public class EnemyHP : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        animator.SetBool("Take Damage", true);
         this.hp -= damage;
+        //animator.SetBool("Take Damage", true);
         Debug.Log("HP: " + hp);
     }
 
@@ -38,12 +39,8 @@ public class EnemyHP : MonoBehaviour
             if (this.gameObject.tag == "Enemy")
             {
                 Instantiate(deathEffect, this.transform.position + new Vector3(0, 1, 0), this.transform.rotation);
-            } else if (this.gameObject.tag == "Frightfly")
-            {
-                Instantiate(deathEffect, this.transform.position + new Vector3(0, 3, 0), this.transform.rotation);
-            }
-            
-            gameObject.SetActive(false);
+            }            
+            body.SetActive(false);
             int droppedMoney = (int)Random.Range(minMoney, maxMoney);
             _FinishData.money += droppedMoney;
 

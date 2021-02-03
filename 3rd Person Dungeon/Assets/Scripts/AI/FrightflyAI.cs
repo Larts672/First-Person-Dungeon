@@ -9,7 +9,9 @@ public class FrightflyAI : MonoBehaviour
     public Animator frightflyAnim;
     public float biteDistance;
     public float stingDistance;
-    public float stingAttackDelay; // Кулдаун атаки жалом
+    private float biteAttackDelay; // Кулдаун укуса
+    private float stingAttackDelay; // Кулдаун атаки жалом
+    public bool canBiteAttack = true;
     public bool canStingAttack = true;
 
     void Start()
@@ -25,7 +27,7 @@ public class FrightflyAI : MonoBehaviour
 
     private void Chase()
     {
-        if (Vector3.Distance(target.transform.position, transform.position) >= stingDistance && this.gameObject.GetComponent<EnemyHP>().hp > 0)
+        if (Vector3.Distance(target.transform.position, transform.position) >= stingDistance && this.gameObject.GetComponentInChildren<EnemyHP>().hp > 0)
         {
             transform.rotation = Quaternion.LookRotation(new Vector3(target.transform.position.x - transform.position.x, 0f, target.transform.position.z - transform.position.z));
             frightflyAnim.SetBool("Fly Forward", true);
@@ -42,7 +44,7 @@ public class FrightflyAI : MonoBehaviour
 
     private void StingAttack()
     {
-        if (Vector3.Distance(target.transform.position, transform.position) < stingDistance && this.gameObject.GetComponent<EnemyHP>().hp > 0)
+        if (Vector3.Distance(target.transform.position, transform.position) < stingDistance && this.gameObject.GetComponentInChildren<EnemyHP>().hp > 0)
         {
             if (canStingAttack)
             {
@@ -60,5 +62,10 @@ public class FrightflyAI : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void BiteAttack()
+    {
+
     }
 }
