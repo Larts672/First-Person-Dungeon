@@ -5,6 +5,7 @@ using UnityEngine;
 public class FrightflyAI : MonoBehaviour
 {
     public float speed = 5f;
+
     private GameObject target;
     public Animator frightflyAnim;
     public float biteDistance;
@@ -14,8 +15,13 @@ public class FrightflyAI : MonoBehaviour
     public bool canBiteAttack = true;
     public bool canStingAttack = true;
 
+    private int attackType;
+    private bool canAttack;
+
     void Start()
     {
+        canAttack = true;
+        attackType = Random.Range(1, 7);
         target = GameObject.FindGameObjectWithTag("Player");
     }
 
@@ -24,6 +30,8 @@ public class FrightflyAI : MonoBehaviour
         Chase();
         StingAttack();
     }
+
+    private void Attack() { }
 
     private void Chase()
     {

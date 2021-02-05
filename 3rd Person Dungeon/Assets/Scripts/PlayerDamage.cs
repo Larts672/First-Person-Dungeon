@@ -6,16 +6,6 @@ public class PlayerDamage : MonoBehaviour
 {
     public float dmg; // Дамаг этого существа
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
