@@ -101,6 +101,10 @@ public class HPController : MonoBehaviour
         {
             isInLava = true;
         }
+        if (other.gameObject.tag == "Void")
+        {
+            HP = 0;
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -116,6 +120,14 @@ public class HPController : MonoBehaviour
         if (other.gameObject.tag == "Lava")
         {
             isInLava = false;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Void")
+        {
+            HP = 0;
         }
     }
 }

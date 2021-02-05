@@ -13,6 +13,7 @@ TagManager:
   - Projectile
   - ExitSphere
   - Wall
+  - Void
   layers:
   - Default
   - TransparentFX
