@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7756220468941130851}
   - component: {fileID: 7756220468941130850}
+  - component: {fileID: 4023923256408477144}
   m_Layer: 0
   m_Name: Frightfly
   m_TagString: Enemy
@@ -47,9 +48,25 @@ MonoBehaviour:
   speed: 2.5
   frightflyAnim: {fileID: 7707873209339502329}
   biteDistance: 0
-  stingDistance: 6
+  stingDistance: 4.5
   canBiteAttack: 1
   canStingAttack: 1
+--- !u!54 &4023923256408477144
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7756220468941130860}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!136 &7756220469245829739
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -58,12 +75,12 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7756645611327121417}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.3331537
+  m_Radius: 0.34119722
   m_Height: 1.0916235
   m_Direction: 0
-  m_Center: {x: 0.045811433, y: 0.16684745, z: 0.0000000010286991}
+  m_Center: {x: 0.045811433, y: 0.15880449, z: 8.8473806e-10}
 --- !u!114 &7756220469245829716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,6 +101,20 @@ MonoBehaviour:
   animator: {fileID: 7707873209339502329}
   hp: 1
   _FinishData: {fileID: 0}
+--- !u!136 &2222029363104296258
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7756822002001906499}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.26048502
+  m_Height: 0.85338724
+  m_Direction: 0
+  m_Center: {x: -0.153653, y: 0.12217143, z: 0.021757223}
 --- !u!1 &8807281800792808782
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,6 +260,12 @@ Transform:
 --- !u!95 &7707873209339502329 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 95838608559024618, guid: d157f2193148c344e9385287f36ecaba,
+    type: 3}
+  m_PrefabInstance: {fileID: 7756220470143481619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7756822002001906499 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1800927262669904, guid: d157f2193148c344e9385287f36ecaba,
     type: 3}
   m_PrefabInstance: {fileID: 7756220470143481619}
   m_PrefabAsset: {fileID: 0}

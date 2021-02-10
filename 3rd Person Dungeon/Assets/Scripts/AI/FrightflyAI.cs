@@ -35,13 +35,17 @@ public class FrightflyAI : MonoBehaviour
 
     private void Chase()
     {
+        transform.position = Vector3.MoveTowards
+                (transform.position,
+                new Vector3(transform.position.x, target.transform.position.y+1, transform.position.z),
+                0.01f * speed);
         if (Vector3.Distance(target.transform.position, transform.position) >= stingDistance && this.gameObject.GetComponentInChildren<EnemyHP>().hp > 0)
         {
-            transform.rotation = Quaternion.LookRotation(new Vector3(target.transform.position.x - transform.position.x, 0f, target.transform.position.z - transform.position.z));
+            transform.rotation = Quaternion.LookRotation(new Vector3(target.transform.position.x - transform.position.x, target.transform.position.y - transform.position.y, target.transform.position.z - transform.position.z));
             frightflyAnim.SetBool("Fly Forward", true);
             transform.position = Vector3.MoveTowards
                 (transform.position,
-                new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z),
+                new Vector3(target.transform.position.x+4f, transform.position.y, target.transform.position.z),
                 0.01f * speed);
         }
         else
@@ -62,7 +66,7 @@ public class FrightflyAI : MonoBehaviour
             }
             if (!canStingAttack)
             {
-                transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(new Vector3(target.transform.position.x - transform.position.x, 0f, target.transform.position.z - transform.position.z)), Time.deltaTime * speed);
+                transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(new Vector3(target.transform.position.x - transform.position.x, target.transform.position.y - transform.position.y, target.transform.position.z - transform.position.z)), Time.deltaTime * speed);
                 stingAttackDelay -= Time.deltaTime;
                 if (stingAttackDelay <= 0)
                 {
