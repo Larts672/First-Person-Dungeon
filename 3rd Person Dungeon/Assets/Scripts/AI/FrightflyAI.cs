@@ -16,22 +16,45 @@ public class FrightflyAI : MonoBehaviour
     public bool canStingAttack = true;
 
     private int attackType;
-    private bool canAttack;
+    private bool isAttacking;
+    private bool isChasing;
+    private float chaseDelay;
 
     void Start()
     {
-        canAttack = true;
-        attackType = Random.Range(1, 7);
+        isAttacking = false;
         target = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
     {
-        Chase();
-        StingAttack();
+        Attack();
+        if (isChasing)
+        {
+            Chase();
+            StingAttack();
+        }
     }
 
-    private void Attack() { }
+    private void Attack() {
+        if (!isAttacking)
+        {
+            attackType = Random.Range(1, 7);
+            if (attackType == 1) { }
+            if (attackType == 2 | attackType == 3) {
+                isChasing = true;
+                isAttacking = true;
+                chaseDelay = Random.Range(1, 10);
+            }
+            if (attackType == 4) { }
+            if (attackType == 5 | attackType == 6) { }
+            if (attackType == 7) { }
+        }
+        if (isChasing)
+        {
+            ChaseAttack();
+        }
+    }
 
     private void Chase()
     {
@@ -79,5 +102,15 @@ public class FrightflyAI : MonoBehaviour
     private void BiteAttack()
     {
 
+    }
+
+    private void ChaseAttack()
+    {
+        chaseDelay -= Time.deltaTime;
+        if (chaseDelay <= 0)
+        {
+            isAttacking = false;
+            isChasing = false;
+        }
     }
 }
