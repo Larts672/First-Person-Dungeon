@@ -48,6 +48,15 @@ MonoBehaviour:
     Keys: []
     Locks: []
     LockPlacement: 0
+  - Graph: {fileID: 11400000}
+    TileSets:
+    - {fileID: 11400000, guid: 7fdb54dfea616884ca08b357d0afe244, type: 2}
+    NodeType: 0
+    Position: 0.33333334
+    Label: New Node
+    Keys: []
+    Locks: []
+    LockPlacement: 0
   Lines:
   - Graph: {fileID: 11400000}
     DungeonArchetypes:
