@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: DungeonFlow
   m_EditorClassIdentifier: 
   Length:
-    Min: 5
-    Max: 10
+    Min: 10
+    Max: 15
   GlobalPropGroupIDs: 
   GlobalPropRanges: []
   KeyManager: {fileID: 0}
