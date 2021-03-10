@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 678, y: 492}
+  m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 65464
+  controlID: 21262
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 1644
     height: 947
-  m_MinSize: {x: 402, y: 492}
+  m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 65465
+  controlID: 21263
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,10 +162,10 @@ MonoBehaviour:
     y: 0
     width: 1644
     height: 676
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 65466
+  controlID: 21264
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -183,7 +183,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 216
+    width: 212
     height: 676
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -207,9 +207,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 216
+    x: 212
     y: 0
-    width: 1428
+    width: 1432
     height: 676
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -296,9 +296,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 217
+    x: 213
     y: 19
-    width: 1426
+    width: 1430
     height: 655
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -309,7 +309,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1426, y: 634}
+  m_TargetSize: {x: 1430, y: 634}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -415,7 +415,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 215
+    width: 211
     height: 655
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
@@ -423,7 +423,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: b629fcff442afcff762afcff862cfcffc62cfcff082dfcff482dfcfff249fcff7a4afcff124bfcffc24bfcff262cfdff2a36ffffa0950000ea950000
+      m_ExpandedIDs: ba16cbffd216cbffe216cbff0617cbff1e17cbff3617cbffdc17cbffe817cbffea2b1200f42b1200
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -468,24 +468,24 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 216
+    x: 212
     y: 73
-    width: 1426
+    width: 1430
     height: 655
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 041913bb91d8d074ebb76399924a3558
   m_Gizmos: 1
-  m_SceneIsLit: 1
+  m_SceneIsLit: 0
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 9.782892, y: 1.725793, z: 18.149403}
+    m_Target: {x: -1.3426182, y: 2.223989, z: 10.692862}
     speed: 2
-    m_Value: {x: -0.09281837, y: 0.6410142, z: 0.18351401}
+    m_Value: {x: -1.3426182, y: 2.223989, z: 10.692862}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -498,7 +498,7 @@ MonoBehaviour:
   m_SceneViewState:
     showFog: 1
     showMaterialUpdate: 1
-    showSkybox: 1
+    showSkybox: 0
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
@@ -531,13 +531,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.13065985, y: -0.8003799, z: 0.555553, w: -0.18722962}
+    m_Target: {x: 0.06568486, y: -0.8273775, z: 0.10302069, w: 0.54922503}
     speed: 2
-    m_Value: {x: -0.09717428, y: 0.8200119, z: -0.14683607, w: -0.5445887}
+    m_Value: {x: -0.065647796, y: 0.8269107, z: -0.10296256, w: -0.54891515}
   m_Size:
-    m_Target: 13.992717
+    m_Target: 5.172447
     speed: 2
-    m_Value: 1.3301916
+    m_Value: 5.172447
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1167,21 +1167,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Packs/DUNGEON/CREATURES/Polygonal Creatures Pack 2/Polygonal Plant Venus/Prefabs
+    - Assets/Prefabs/Enemies
   m_ViewMode: 1
   m_StartGridSize: 74
   m_LastFolders:
-  - Assets/Packs/DUNGEON/CREATURES/Polygonal Creatures Pack 2/Polygonal Plant Venus/Prefabs
+  - Assets/Prefabs/Enemies
   m_LastFoldersGridSize: 74
   m_LastProjectPath: D:\UnityProgects\GreshishnikovM\Unity\FPD real rep\First-Person-Dungeon\3rd
     Person Dungeon
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 506}
-    m_SelectedIDs: b2090100
-    m_LastClickedID: 68018
-    m_ExpandedIDs: 0000000042ec000044ec000046ec000048ec00004aec00004cec00004eec000050ec000052ec000054ec000056ec000058ec00005aec00005cec00005eec000060ec000062ec000064ec000066ec000068ec00006aec00006cec00006eec000070ec000072ec000074ec000076ec000078ec00007aec0000e8ec0000
+    scrollPos: {x: 0, y: 1018}
+    m_SelectedIDs: 14d40000
+    m_LastClickedID: 54292
+    m_ExpandedIDs: 0000000032d3000034d3000036d3000038d300003ad300003cd300003ed3000040d3000042d3000044d3000046d3000048d300004ad300004cd300004ed3000050d3000052d3000054d3000056d3000058d300005ad300005cd300005ed3000060d3000062d3000064d3000066d3000068d300006ad30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1209,7 +1209,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000042ec000044ec000046ec000048ec00004aec00004cec00004eec000050ec000052ec000054ec000056ec000058ec00005aec00005cec00005eec000060ec000062ec000064ec000066ec000068ec00006aec00006cec00006eec000070ec000072ec000074ec000076ec000078ec00007aec0000
+    m_ExpandedIDs: 0000000032d3000034d3000036d3000038d300003ad300003cd300003ed3000040d3000042d3000044d3000046d3000048d300004ad300004cd300004ed3000050d3000052d3000054d3000056d3000058d300005ad300005cd300005ed3000060d3000062d3000064d3000066d3000068d300006ad30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1323,7 +1323,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewResizer:
-    m_CachedPref: -462
+    m_CachedPref: 462
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}

@@ -14,11 +14,15 @@ public class FrightflyAI : MonoBehaviour
     private float stingAttackDelay; // Кулдаун атаки жалом
     public bool canBiteAttack = true;
     public bool canStingAttack = true;
+    public bool isGoingToHeal;
+    public EnemyHP FrightflyHP;
 
     private int attackType;
     private bool isAttacking;
     private bool isChasing;
+    private bool isHealing;
     private float chaseDelay;
+    private float healDelay;
 
     void Start()
     {
@@ -34,13 +38,20 @@ public class FrightflyAI : MonoBehaviour
             Chase();
             StingAttack();
         }
+        
     }
 
     private void Attack() {
         if (!isAttacking)
         {
             attackType = Random.Range(1, 7);
-            if (attackType == 1) { }
+            if (attackType == 1) {
+                isHealing = true;
+                isGoingToHeal = true;
+                isAttacking = true;
+                healDelay = 5;
+                ;
+            }
             if (attackType == 2 | attackType == 3) {
                 isChasing = true;
                 isAttacking = true;
@@ -53,6 +64,10 @@ public class FrightflyAI : MonoBehaviour
         if (isChasing)
         {
             ChaseAttack();
+        }
+        if (isHealing)
+        {
+            Heal();
         }
     }
 
@@ -77,6 +92,26 @@ public class FrightflyAI : MonoBehaviour
         }
     }
 
+    private void GoToHeal()
+    {
+        transform.position = Vector3.MoveTowards
+                (transform.position,
+                new Vector3(transform.position.x, target.transform.position.y, transform.position.z),
+                0.01f * speed);
+        if (this.gameObject.GetComponentInChildren<EnemyHP>().hp > 0)
+        {
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(new Vector3(target.transform.position.x - transform.position.x, 0f, target.transform.position.z - transform.position.z)), 0.02f);
+            frightflyAnim.SetBool("Fly Forward", true);
+            transform.position = Vector3.MoveTowards
+                (transform.position,
+                new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z),
+                0.01f * speed);
+        }
+        else
+        {
+            frightflyAnim.SetBool("Fly Forward", false);
+        }
+    }
     private void StingAttack()
     {
         if (Vector3.Distance(target.transform.position, transform.position) < stingDistance && this.gameObject.GetComponentInChildren<EnemyHP>().hp > 0)
@@ -106,11 +141,32 @@ public class FrightflyAI : MonoBehaviour
 
     private void ChaseAttack()
     {
+        target = GameObject.FindGameObjectWithTag("Player");
         chaseDelay -= Time.deltaTime;
         if (chaseDelay <= 0)
         {
             isAttacking = false;
             isChasing = false;
+        }
+    }
+    private void Heal()
+    {
+        target = GameObject.FindGameObjectWithTag("FrightflyHeal");
+        if (this.gameObject.transform.position != target.transform.position)
+        {
+            if (isGoingToHeal) {
+                GoToHeal();
+            }
+            if (!isGoingToHeal && healDelay>0)
+            {
+                healDelay -= Time.deltaTime;
+                FrightflyHP.hp += 100f;
+            }
+            if(!isGoingToHeal && healDelay < 0)
+            {
+                isAttacking = false;
+                isHealing = false;
+            }            
         }
     }
 }

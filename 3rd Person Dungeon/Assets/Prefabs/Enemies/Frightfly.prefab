@@ -51,6 +51,8 @@ MonoBehaviour:
   stingDistance: 4.5
   canBiteAttack: 1
   canStingAttack: 1
+  isGoingToHeal: 0
+  FrightflyHP: {fileID: 7756220469245829716}
 --- !u!54 &4023923256408477144
 Rigidbody:
   m_ObjectHideFlags: 0
