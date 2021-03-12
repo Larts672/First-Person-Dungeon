@@ -17,12 +17,17 @@ public class FrightflyAI : MonoBehaviour
     public bool isGoingToHeal;
     public EnemyHP FrightflyHP;
 
+    public GameObject projectile;
     private int attackType;
     private bool isAttacking;
     private bool isChasing;
     private bool isHealing;
+    private bool isBurstAttacking;
     private float chaseDelay;
-    private float healDelay;
+    public float healDelay = 2f;
+    private bool isHealingRightNow;
+    private bool hasMultiShooted;
+    private bool isMultiShooting;
 
     void Start()
     {
@@ -44,22 +49,26 @@ public class FrightflyAI : MonoBehaviour
     private void Attack() {
         if (!isAttacking)
         {
-            attackType = Random.Range(1, 7);
+            attackType = Random.Range(1, 9);
             if (attackType == 1) {
                 isHealing = true;
                 isGoingToHeal = true;
                 isAttacking = true;
                 healDelay = 5;
-                ;
             }
-            if (attackType == 2 | attackType == 3) {
+            if (attackType >= 2 && attackType <= 5) {
                 isChasing = true;
                 isAttacking = true;
                 chaseDelay = Random.Range(1, 10);
             }
-            if (attackType == 4) { }
-            if (attackType == 5 | attackType == 6) { }
-            if (attackType == 7) { }
+            if (attackType == 6) {
+                hasMultiShooted = false;
+                isMultiShooting = false;
+                isAttacking = true;
+                isBurstAttacking = true;
+            }
+            if (attackType == 7 | attackType == 8) { }
+            if (attackType == 9) { }
         }
         if (isChasing)
         {
@@ -68,6 +77,10 @@ public class FrightflyAI : MonoBehaviour
         if (isHealing)
         {
             Heal();
+        }
+        if (isBurstAttacking)
+        {
+            BurstAttack();
         }
     }
 
@@ -149,24 +162,66 @@ public class FrightflyAI : MonoBehaviour
             isChasing = false;
         }
     }
+    private void BurstAttack()
+    {
+        target = GameObject.FindGameObjectWithTag("Player");
+        if (!isMultiShooting)
+        {
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(new Vector3(target.transform.position.x - transform.position.x, 0f, target.transform.position.z - transform.position.z)), 1);
+            Debug.Log("rotated");
+            //Instantiate(projectile, transform.position, transform.rotation);
+            StartCoroutine("Burst", 3f);
+        }
+        if (hasMultiShooted)
+        {
+            isAttacking = false;
+            isBurstAttacking = false;
+        }
+
+    }
     private void Heal()
     {
         target = GameObject.FindGameObjectWithTag("FrightflyHeal");
         if (this.gameObject.transform.position != target.transform.position)
         {
             if (isGoingToHeal) {
+                isHealingRightNow = false;
                 GoToHeal();
             }
-            if (!isGoingToHeal && healDelay>0)
+            if (!isGoingToHeal && !isHealingRightNow)
             {
-                healDelay -= Time.deltaTime;
-                FrightflyHP.hp += 100f;
+                isHealingRightNow = true;
+                StartCoroutine("HealDelay");
+                //isAttacking = false;
+                //isHealing = false;
             }
-            if(!isGoingToHeal && healDelay < 0)
-            {
-                isAttacking = false;
-                isHealing = false;
-            }            
         }
+    }
+
+    IEnumerator HealDelay()
+    {
+        yield return new WaitForSecondsRealtime(healDelay / 4);
+        FrightflyHP.hp += 10f;
+        yield return new WaitForSecondsRealtime(healDelay / 4);
+        FrightflyHP.hp += 10f;
+        yield return new WaitForSecondsRealtime(healDelay / 4);
+        FrightflyHP.hp += 10f;
+        yield return new WaitForSecondsRealtime(healDelay / 4);
+        FrightflyHP.hp += 10f;
+        Debug.Log(FrightflyHP.hp);
+        isAttacking = false;
+        isHealing = false;
+    }
+
+    IEnumerator Burst(float time)
+    {
+        isMultiShooting = true;
+        Instantiate(projectile, transform.position, transform.rotation);
+        yield return new WaitForSeconds(time);
+        Instantiate(projectile, transform.position, transform.rotation);
+        yield return new WaitForSeconds(time);
+        Instantiate(projectile, transform.position, transform.rotation);
+        yield return new WaitForSeconds(time);
+        hasMultiShooted = true;
     }
 }

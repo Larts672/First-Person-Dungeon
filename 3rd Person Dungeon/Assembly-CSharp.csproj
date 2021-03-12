@@ -64,7 +64,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BossRoomCentre.cs" />
     <Compile Include="Assets\Comment.cs" />
     <Compile Include="Assets\Packs\DUNGEON\ELEMENTS\BrokenVector\UltimateDungeonPack\Scenes\Demo\FPControls\Scripts\CharacterController.cs" />
     <Compile Include="Assets\Packs\DUNGEON\ELEMENTS\BrokenVector\UltimateDungeonPack\Scenes\Demo\FPControls\Scripts\MouseCamLook.cs" />
@@ -152,6 +151,7 @@
     <Compile Include="Assets\Scripts\AdminsInfo.cs" />
     <Compile Include="Assets\Scripts\Attack.cs" />
     <Compile Include="Assets\Scripts\BossBarController.cs" />
+    <Compile Include="Assets\Scripts\BossRoomCentre.cs" />
     <Compile Include="Assets\Scripts\CameraSwitch.cs" />
     <Compile Include="Assets\Scripts\CanvasScript.cs" />
     <Compile Include="Assets\Scripts\CentreCubes.cs" />

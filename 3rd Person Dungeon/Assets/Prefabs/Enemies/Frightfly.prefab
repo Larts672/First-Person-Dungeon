@@ -53,6 +53,8 @@ MonoBehaviour:
   canStingAttack: 1
   isGoingToHeal: 0
   FrightflyHP: {fileID: 7756220469245829716}
+  projectile: {fileID: 1545240088093306, guid: 359874f8488ee1e42b8e1bf9ad5755f0, type: 3}
+  healDelay: 2
 --- !u!54 &4023923256408477144
 Rigidbody:
   m_ObjectHideFlags: 0
