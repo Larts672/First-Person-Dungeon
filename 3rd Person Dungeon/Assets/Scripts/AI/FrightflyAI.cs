@@ -17,6 +17,7 @@ public class FrightflyAI : MonoBehaviour
     public bool isGoingToHeal;
     public EnemyHP FrightflyHP;
 
+    public Transform attackPlace;
     public GameObject projectile;
     private int attackType;
     private bool isAttacking;
@@ -167,13 +168,15 @@ public class FrightflyAI : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player");
         if (!isMultiShooting)
         {
+            frightflyAnim.SetBool("Fly Forward", false);
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(new Vector3(target.transform.position.x - transform.position.x, 0f, target.transform.position.z - transform.position.z)), 1);
             Debug.Log("rotated");
             //Instantiate(projectile, transform.position, transform.rotation);
-            StartCoroutine("Burst", 3f);
+            StartCoroutine("Burst", 0.5f);
         }
         if (hasMultiShooted)
         {
+            frightflyAnim.SetBool("Fly Forward", true);
             isAttacking = false;
             isBurstAttacking = false;
         }
@@ -216,12 +219,15 @@ public class FrightflyAI : MonoBehaviour
     IEnumerator Burst(float time)
     {
         isMultiShooting = true;
-        Instantiate(projectile, transform.position, transform.rotation);
+        frightflyAnim.SetTrigger("Projectile Attack 000");
         yield return new WaitForSeconds(time);
-        Instantiate(projectile, transform.position, transform.rotation);
+        Instantiate(projectile, attackPlace.position, transform.rotation);
+        frightflyAnim.SetTrigger("Projectile Attack 000");
         yield return new WaitForSeconds(time);
-        Instantiate(projectile, transform.position, transform.rotation);
+        Instantiate(projectile, attackPlace.position, transform.rotation);
+        frightflyAnim.SetTrigger("Projectile Attack 000");
         yield return new WaitForSeconds(time);
+        Instantiate(projectile, attackPlace.position, transform.rotation);    
         hasMultiShooted = true;
     }
 }

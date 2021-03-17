@@ -53,6 +53,7 @@ MonoBehaviour:
   canStingAttack: 1
   isGoingToHeal: 0
   FrightflyHP: {fileID: 7756220469245829716}
+  attackPlace: {fileID: 7760573762321803309}
   projectile: {fileID: 1545240088093306, guid: 359874f8488ee1e42b8e1bf9ad5755f0, type: 3}
   healDelay: 2
 --- !u!54 &4023923256408477144
@@ -282,6 +283,12 @@ Transform:
 --- !u!1 &7756645611327121417 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1835609517530906, guid: d157f2193148c344e9385287f36ecaba,
+    type: 3}
+  m_PrefabInstance: {fileID: 7756220470143481619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7760573762321803309 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4707921269858110, guid: d157f2193148c344e9385287f36ecaba,
     type: 3}
   m_PrefabInstance: {fileID: 7756220470143481619}
   m_PrefabAsset: {fileID: 0}
